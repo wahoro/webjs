@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles/layout.css" media="screen">
   </head>
   <body>
     <h1>SnapShots</h1>
     <!-- emmet ul>(li>a[images/$.jpg][title=images$])*4 -->
-  <ul>
-    <li><a href="images/1.jpg" title="images1" onclick="showPic(this); return false;">1</a></li>
-    <li><a href="images/2.jpg" title="images2" onclick="showPic(this); return false;">2</a></li>
-    <li><a href="images/3.jpg" title="images3" onclick="showPic(this); return false;">3</a></li>
-    <li><a href="images/4.jpg" title="images4" onclick="showPic(this); return false;">4</a></li>
+  <ul id="imagegallery">
+    <li><a href="images/1.jpg" title="images1">1</a></li>
+    <li><a href="images/2.jpg" title="images2">2</a></li>
+    <li><a href="images/3.jpg" title="images3">3</a></li>
+    <li><a href="images/4.jpg" title="images4">4</a></li>
     <!-- emmet img#placeholder[src=images/timg.gif][alt='my image gallery'] -->
     <img src="images/timg.gif" alt="my image gallery" id="placeholder">
+    <p id="dec">chose a img</p>
   </ul>
   <script src="scripts/showPic.js"></script>
   </body>

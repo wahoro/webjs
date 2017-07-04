@@ -17,13 +17,16 @@
       // alert(typeof document.getElementById("purchases"));
       // alert(document.getElementsByTagName('li').length);
       // alert(document.getElementsByClassName("sale").length);
-      var params = document.getElementsByTagName('p');
-      for (var i=0; i<params.length; i++) {
-        var title_text = params[i].getAttribute("title");
-        if (title_text) {
-          alert(title_text);
-        }
-      }
+      // var params = document.getElementsByTagName('p');
+      // for (var i=0; i<params.length; i++) {
+      //   var title_text = params[i].getAttribute("title");
+      //   if (title_text) {
+      //     alert(title_text);
+      //   }
+      // }
+      var body_element =  document.getElementsByTagName('body')[0];
+      alert(body_element.childNodes.length);
+
     </script>
     <!-- <script src="test.js" charset="utf-8"></script> -->
   </body>
