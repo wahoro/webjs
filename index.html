@@ -2,13 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>this is just test</title>
+    <title>Shopping list</title>
   </head>
   <body>
-    <ui>
-      <li>this one</li>
-      <li>this two</li>
-      <li>this three</li>
-    </ui>
+    <h1>What to buy</h1>
+    <p title="a gentle reminder">Don't forget to buy this stuff</p>
+    <ul id="purchases">
+      <li>a thin beans</li>
+      <li class="sale">cheese</li>
+      <li class="sale import">Milk</li>
+    </ul>
+    <script type="text/javascript">
+      // alert(typeof document.getElementById("purchases"));
+      // alert(document.getElementsByTagName('li').length);
+      alert(document.getElementsByClassName("sale").length);
+    </script>
+    <!-- <script src="test.js" charset="utf-8"></script> -->
   </body>
 </html>
